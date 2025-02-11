@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Code, Zap, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
