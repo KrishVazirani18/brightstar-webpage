@@ -14,21 +14,34 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center">
-            <img src="/lovable-uploads/c37b3cd0-6a95-44e9-8669-4fa9521ff4ff.png" alt="Brightstar" className="h-32" />
+            <img
+              src="/lovable-uploads/c37b3cd0-6a95-44e9-8669-4fa9521ff4ff.png"
+              alt="Brightstar"
+              className="h-32"
+            />
           </Link>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/services" className="text-black hover:text-brightstar-primary transition-colors">
+            <Link
+              to="/services"
+              className="text-black hover:text-brightstar-primary transition-colors"
+            >
               Services
             </Link>
-            <Link to="/team" className="text-black hover:text-brightstar-primary transition-colors">
+            <Link
+              to="/team"
+              className="text-black hover:text-brightstar-primary transition-colors"
+            >
               Team
             </Link>
-            <Link to="/contact" className="text-black hover:text-brightstar-primary transition-colors">
+            {/* <Link
+              to="/contact"
+              className="text-black hover:text-brightstar-primary transition-colors"
+            >
               Contact
-            </Link>
-            <a 
+            </Link> */}
+            <a
               href="/contact"
               className="bg-brightstar-primary text-white px-6 py-2 rounded-md hover:bg-brightstar-light transition-colors"
             >
@@ -38,11 +51,15 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden flex items-center">
-            <button 
+            <button
               onClick={toggleMobileMenu}
               className="text-black focus:outline-none"
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -51,28 +68,28 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute left-0 right-0 top-20 bg-white shadow-lg">
             <div className="flex flex-col items-center space-y-4 py-6">
-              <Link 
-                to="/services" 
+              <Link
+                to="/services"
                 className="text-black hover:text-brightstar-primary transition-colors"
                 onClick={toggleMobileMenu}
               >
                 Services
               </Link>
-              <Link 
-                to="/team" 
+              <Link
+                to="/team"
                 className="text-black hover:text-brightstar-primary transition-colors"
                 onClick={toggleMobileMenu}
               >
                 Team
               </Link>
-              <Link 
-                to="/contact" 
+              <Link
+                to="/contact"
                 className="text-black hover:text-brightstar-primary transition-colors"
                 onClick={toggleMobileMenu}
               >
                 Contact
               </Link>
-              <a 
+              <a
                 href="/contact"
                 className="bg-brightstar-primary text-white px-6 py-2 rounded-md hover:bg-brightstar-light transition-colors"
                 onClick={toggleMobileMenu}
