@@ -132,7 +132,7 @@ const Index = () => {
           transition={{ duration: 0.2 }} 
           className="inline-block"
         >
-          Disrupt
+           &nbsp;Disrupt
         </motion.span>
       </motion.h2>
 
