@@ -8,14 +8,16 @@ const Team = () => {
       name: "Krish Vazirani",
       role: "Managing Partner",
       image: "headshots/krish-circular-headshot.png",
-      description: "An exited founder and technology strategist, Krish leverages his experience in software leadership and product innovation to deliver high-impact digital solutions."
+      description:
+        "An exited founder and technology strategist, Krish leverages his experience in software leadership and product innovation to deliver high-impact digital solutions.",
     },
     {
       name: "Sean Blizard",
       role: "Technical Partner",
       image: "headshots/sean-circular-headshot.png",
-      description: "A full-stack developer with expertise in modern web technologies, Sean ensures the highest quality in our development processes and deliverables."
-    }
+      description:
+        "A full-stack developer with expertise in modern web technologies, Sean ensures the highest quality in our development processes and deliverables.",
+    },
   ];
 
   const advisors = [
@@ -23,8 +25,9 @@ const Team = () => {
       name: "Farouk Charkas",
       role: "Senior Advisor",
       image: "headshots/farouk-circular-headshot.png",
-      description: "A seasoned software engineer and strategic advisor, Farouk draws from his experiences at Delphi AI & Fidelity Investments to provide high-level technical and business guidance."
-    }
+      description:
+        "A seasoned software engineer and strategic advisor, Farouk draws from his experiences at Delphi AI & Fidelity Investments to provide high-level technical and business guidance.",
+    },
   ];
 
   const engineers = [
@@ -32,14 +35,16 @@ const Team = () => {
       name: "Joel D'Silva",
       role: "Forward Deployed Engineer",
       image: "headshots/joel-circular-headshot.png",
-      description: "A problem-solving engineer, Joel applies his background in software development and leadership to drive innovation in forward-deployed engineering."
+      description:
+        "A problem-solving engineer, Joel applies his background in software development and leadership to drive innovation in forward-deployed engineering.",
     },
     {
       name: "Nathan Santiago",
       role: "Forward Deployed Engineer",
       image: "headshots/nathan-circular-headshot.png",
-      description: "A skilled full-stack developer, Nathan combines his experience in game development, web applications, and data visualization to build intuitive and performant digital products."
-    }
+      description:
+        "A skilled full-stack developer, Nathan combines his experience in game development, web applications, and data visualization to build intuitive and performant digital products.",
+    },
   ];
 
   return (
@@ -85,7 +90,9 @@ const Section = ({ title, team, delay }) => (
     {/* Use flexbox for centering when items are less than 3 */}
     <div
       className={`w-full max-w-5xl ${
-        team.length <= 2 ? "flex flex-wrap justify-center gap-8" : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        team.length <= 2
+          ? "flex flex-wrap justify-center gap-8"
+          : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
       }`}
     >
       {team.map((member, index) => (
@@ -112,7 +119,5 @@ const Section = ({ title, team, delay }) => (
     </div>
   </motion.div>
 );
-
-
 
 export default Team;
