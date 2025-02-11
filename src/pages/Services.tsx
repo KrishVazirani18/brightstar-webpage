@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Code, FileCode, Paintbrush, GitBranch, Cloud, HeadsetHelp } from "lucide-react";
+import { Code, FileCode, Paintbrush, GitBranch, Cloud, Handshake} from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -32,7 +32,7 @@ const Services = () => {
       description: "Scalable cloud solutions and automated deployment pipelines for optimal performance."
     },
     {
-      icon: <HeadsetHelp className="w-12 h-12 text-brightstar-primary" />,
+      icon: <Handshake className="w-12 h-12 text-brightstar-primary" />,
       title: "Ongoing Support & Consulting",
       description: "Continuous technical support and strategic consulting to keep your solutions running smoothly."
     }
