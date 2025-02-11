@@ -29,7 +29,7 @@ const Index = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 overflow-hidden whitespace-nowrap animate-typing">
               Software Excellence, Delivered
             </h1>
             <p className="text-xl text-gray-600 mb-8">
