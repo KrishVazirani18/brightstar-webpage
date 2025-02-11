@@ -1,8 +1,10 @@
+
 import { motion } from "framer-motion";
-import { Code, Zap, Users } from "lucide-react";
+import { Code, Zap, Users, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ServiceCard from "@/components/ServiceCard";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const services = [
@@ -19,19 +21,27 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto text-center px-4">
+      <section className="pt-32 pb-20 px-4">
+        <div className="container mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <div className="overflow-hidden">
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 inline-block whitespace-nowrap overflow-hidden border-r-4 border-brightstar-primary animate-typing">
-                Software Excellence, Delivered.
-              </h1>
-            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Software Excellence, Delivered
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              We transform your ideas into powerful digital solutions, delivering innovation with precision and expertise.
+            </p>
+            <Button 
+              className="bg-brightstar-primary hover:bg-brightstar-light text-white px-8 py-6 text-lg transition-all transform hover:scale-105"
+              onClick={() => window.location.href = '/contact'}
+            >
+              Get Started
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </motion.div>
         </div>
       </section>

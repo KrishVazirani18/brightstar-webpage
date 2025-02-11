@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center">
-            <img src="/lovable-uploads/c37b3cd0-6a95-44e9-8669-4fa9521ff4ff.png" alt="Brightstar" className="h-16" />
+            <img src="/lovable-uploads/c37b3cd0-6a95-44e9-8669-4fa9521ff4ff.png" alt="Brightstar" className="h-20" />
           </Link>
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/services" className="text-black hover:text-brightstar-primary transition-colors">
